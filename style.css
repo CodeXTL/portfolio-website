@@ -1,3 +1,138 @@
+/* Removes default margins and padding from common elements */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0; /* Removes default margins */
+  padding: 0; /* Removes default padding */
+}
+
 a:hover {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+/* We adopt a Mobile-First Approach */
+
+body {
+  display: flex;
+  flex-direction: column; /* Stacks header, nav, main, footer vertically by default */
+  min-height: 100vh; /* Ensures the body takes up full viewport height */
+
+  /* Font properties */
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #333;
+
+  line-height: 1.6; /* Sets spacing between lines */
+}
+
+/* Styling for header */
+header {
+  background-color: #f0f0f0; /* Sets background color for header */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font: italic small-caps bold 48px cursive;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers nav items horizontally */
+  list-style: none; /* Remove bullet points */
+  background-color: #333; /* Sets background for nav bar */
+  padding: 10px;
+  text-align: center; /* Center the navigation links */
+}
+
+nav li {
+  display: inline; /* Make list items horizontal */
+  margin: 0 15px; /* Add some spacing between links */
+}
+
+nav a {
+  color: white; /* Sets link color */
+  text-decoration: none; /* Removes underlines from links */
+  padding: 5px 10px; /* Add some padding around the links */
+}
+
+main {
+  flex: 1; /* Allows main content to expand and fill available space */
+  padding: 20px;
+}
+
+footer {
+  background-color: #f0f0f0; /* Light gray background for footer */
+  padding: 10px;
+  text-align: center;
+}
+
+/* Styling for #projects */
+#projects h1 {
+  margin-bottom: 10px;
+}
+
+/* Styling for #project-grid */
+
+#project-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive grid for projects */
+  gap: 20px; /* Spacing between grid items */
+}
+
+#project-grid h3 {
+  margin-bottom: 10px; /* Space between title and description */
+}
+
+#project-grid article {
+  padding: 20px;
+
+  /* Border properties */
+  border: 1px solid #ccc; /* Add a border to each project */
+  border-radius: 5px;
+}
+
+#project-grid article p {
+  margin-bottom: 15px; /* Space between description and link */
+}
+
+#project-grid article a {
+  display: inline-block;
+  background-color: #007bff;
+
+  /* Font properties */
+  color: white;
+  text-decoration: none; /* Remove underline */
+
+  padding: 8px 15px;
+  border-radius: 5px; /* Rounded corners */
+}
+
+#project-grid article img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#skills ul {
+  margin-left: 20px;
+}
+
+/* Tablet and Larger */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+  }
 }

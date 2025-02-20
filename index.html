@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Welcome to my portfolio showcasing my learning journy as a software developer and electrical engineer!"
+    />
+    <title>Oliver Lee | My Portfolio</title>
 
-    <title>Oliver Lee</title>
-
-    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- The main header used across all the pages of our website -->
     <header>
       <h1>Oliver Lee</h1>
     </header>
@@ -17,70 +20,42 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="contacts.html">Contact</a></li>
-        <li><a href="#">Tic-Tac-Toe</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-
-      <form>
-        <input type="search" name="q" placeholder="Search query" />
-        <input type="submit" value="Go!" />
-      </form>
     </nav>
 
-    <!-- Our page's main content -->
     <main>
-      <hr />
-      <h2>Welcome to my working progress portfolio page!</h2>
-      <h2>What I'm working on</h2>
-      <ul>
-        <li>This website (duh).</li>
-        <li>Improving my skills in ROS2 Jazzy and Gazebo simulations.</li>
-        <li>Making donuts in Blender.</li>
-        <li>Learning how to use Solidworks.</li>
-        <li>Learning how to design PCBs in Kicad.</li>
-        <li>Getting back into drawing.</li>
-        <li>Become a better player of Factorio.</li>
-        <li>Practice making better grilled cheese.</li>
-        <li>Looking into FPGAs.</li>
-      </ul>
-      <h2>Updates</h2>
-      <ul>
-        <li>
-          02/15/25:
-          <ul>
-            <li>Added About Me page.</li>
-            <li>Added first style.css</li>
-          </ul>
-        </li>
-        <li>
-          02/13/25:
-          <ul>
-            <li>Added basic structure (header, main, footer)</li>
-            <li>
-              Added basic navigation bar and search bar (logic not yet
-              implemented)
-            </li>
-            <li>Added bare-bones contacts page</li>
-          </ul>
-        </li>
-        <li>
-          02/07/25:
-          <ul>
-            <li>Website deployed and published!</li>
-          </ul>
-        </li>
-      </ul>
-      <aside>
-        <h2>Related</h2>
-      </aside>
+      <section id="about-summary">
+        <h2>Who am I?</h2>
+        <p>I am a coffee addict who loves to learn! <a href="about.html">Read more...</a></p>
+      </section>
+
+      <h2>Recent Projects</h2>
+      <section id="recent-projects">
+        <p>Recent projects will go here...</p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>And more!!!</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Hidden for now in case of scam</p>
+        <!-- <a href="mailto:x.tomli1122@gmail.com">x.tomli1122@gmail.com</a> -->
+      </section>
     </main>
 
-    <!-- The footer that is used across all the pages of our website -->
     <footer>
       <hr />
-      <p>©Copyright 2050 by Me. All rights reversed.</p>
+      <p>Temporary footer</p>
     </footer>
   </body>
 </html>
